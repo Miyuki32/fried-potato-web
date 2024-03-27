@@ -8,15 +8,17 @@
     	<meta name="keywords" content="console, gaming, Nintendo, Sony, Microsoft, Atari, Sega">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel='stylesheet' type="text/css" href="style.css">
+		<link rel="icon" href="./logos/potato.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="./scripts/code.js"></script>
     </head>
 
 	<body>
 		<nav class="navbar">
-			<input type="checkbox" id="checkbox_toggle">
-      		<label for="checkbox_toggle" class="hamburger">&#9776;</label>
-			
+			<div class="logo">
+				<a href="./index.html"><img src="./logos/logo-no-background.png" alt="logo" width="60"></a>
+			</div>
 			<ul class="menu">
-				<li><a href="./index.html"><img src="./logos/logo-no-background.png" alt="logo" width="60"></a></li>
 				<li class="nintendo">
 					<a href="./Nintendo/nintendo.html">Nintendo</a>
 						<ul class="dropdown">
@@ -50,8 +52,18 @@
 			  	</li>
 		  	</ul>
 		</nav>
-
-	  <article></article>
+		<div class="topnav">
+			<a href="./index.html" class="active"><img src="./logos/logo-no-background.png" width="60"></a>
+			<div id="myLinks">
+			  <a href="./Nintendo/nintendo.html">Nintendo</a>
+			  <a href="./Microsoft/xbox.html">Xbox</a>
+			  <a href="Sony/playstaion.html">Playstaion</a>
+			  <a href=""></a>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			  <i class="fa fa-bars"></i>
+			</a>
+		</div>
 	</body>
 
 </html>
