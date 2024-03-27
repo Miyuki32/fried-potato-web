@@ -10,17 +10,48 @@
 		<link rel='stylesheet' type="text/css" href="style.css">
     </head>
 
-   <header>
-     <div class="container">
-		<div class="menu-button">Menu</div>
-		<ul class="flexnav" data-breakpoint="800">
-			<li><a href="./index.html">Home</a></li>
-			<li><a href="./Nintendo/nintendo.html">Nintendo</a></li>
-			<li><a href="./Microsoft/xbox.html">Microsoft</a></li>
-			<li><a href="./Sony/playstaion5.html">Sony</a></li>
-			<li><a href="./Honourable Mention/h_mention.html">Honourable Mention</a></li>
-		</ul>
-	</div>
-   </header>
+	<body>
+		<nav class="navbar">
+			<input type="checkbox" id="checkbox_toggle">
+      		<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+			
+			<ul class="menu">
+				<li><a href="./index.html"><img src="./logos/logo-no-background.png" alt="logo" width="60"></a></li>
+				<li class="nintendo">
+					<a href="./Nintendo/nintendo.html">Nintendo</a>
+						<ul class="dropdown">
+				  			<li><a href="./Nintendo/switch.html">Switch</a></li>
+				  			<li><a href="./Nintendo/other_nintendo.html">Others</a></li>
+						</ul>
+			  	</li>
+	  
+				<li class="microsoft">
+					<a href="./Microsoft/xbox.html">Microsoft</a>
+					<ul class="dropdown">
+						<li><a href="/">Series X/S</a></li>
+						<li><a href="/">Others</a></li>
+					</ul>
+				</li>
+
+			  	<li class="sony">
+					<a href="./Sony/playstaion.html">Sony</a>
+					<ul class="dropdown">
+						<li><a href="/">PS5</a></li>
+						<li><a href="/">Others</a></li>
+					</ul>
+			  	</li>			  
+			  
+			  	<li class="h_mention">
+					<a href="./Honourable%20Mention/h_mention.html">Honourable Mention</a>
+					<ul class="dropdown">
+						<li><a href="/">Atari</a></li>
+						<li><a href="/">Sega</a></li>
+					</ul>
+			  	</li>
+		  	</ul>
+		</nav>
+
+	  <article></article>
+	</body>
 
 </html>
