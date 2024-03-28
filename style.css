@@ -190,6 +190,14 @@ li {
   background-color: #717171;
 }
 
+.numbertext{
+  display: none;
+}
+
+.text{
+  text-align: left;
+  color: black;
+}
 /* Fading animation */
 
 @keyframes fade {
