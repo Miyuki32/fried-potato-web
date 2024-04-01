@@ -77,8 +77,8 @@ li {
 
 .dropdown li {
   padding: 0.5em 1em;
-  width: 8em;
-  text-align: center;
+  width: 6em;
+  text-align: left;
 }
 
 .dropdown li:hover {
