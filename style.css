@@ -31,7 +31,6 @@ li {
 }
 
 
-/* NAVBAR STYLING STARTS */
 .navbar {
   font-family: cursive;
   display: flex;
@@ -42,8 +41,6 @@ li {
   color: #fff;
 }
 
-
-/* NAVBAR MENU */
 .menu {
   display: flex;
   gap: 1em;
@@ -63,12 +60,11 @@ li {
   padding: 5px 14px;
 }
 
-/* DROPDOWN MENU */
 
 .dropdown {
   background-color: black;
   padding: 1em 0;
-  position: absolute; /*WITH RESPECT TO PARENT*/
+  position: absolute;
   display: none;
   border-radius: 8px;
   top: 35px;
@@ -143,13 +139,11 @@ li {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -165,7 +159,6 @@ li {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -174,7 +167,6 @@ li {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -241,10 +233,6 @@ li {
   }
 
   
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
   
   .active {
     background-color: black;
