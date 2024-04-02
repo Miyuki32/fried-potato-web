@@ -128,6 +128,7 @@ article{
   display: none;
 }
 
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -488,6 +489,8 @@ article{
     float: none;
     margin: auto;
     margin-bottom: 20px;
+    width: 340px;
+    height: 320px;
   }
 
   .box_container .SWbox .box_content{
@@ -499,6 +502,8 @@ article{
     float: none;
     margin: auto;
     margin-bottom: 20px;
+    width: 340px;
+    height: 320px;
   }
 
   .box_container .Mbox .box_content{
@@ -510,6 +515,8 @@ article{
     float: none;
     margin: auto;
     margin-bottom: 20px;
+    width: 340px;
+    height: 320px;
   }
 
   .box_container .Sbox .box_content{
@@ -520,16 +527,16 @@ article{
 @media (max-width:400px) {
   .box_container{
     position: relative;
-    width: 370px;
-    height: 1100px;
+    width: 360px;
+    height: 1000px;
   }
 
   .box_container .SWbox{
     display: flex;
     float: none;
     margin: auto;
-    width: 340px;
-    height: 320px;
+    width: 280px;
+    height: 300px;
     margin-bottom: 20px;
   }
 
@@ -541,8 +548,8 @@ article{
     display: flex;
     float: none;
     margin: auto;
-    width: 340px;
-    height: 320px;
+    width: 280px;
+    height: 300px;
     margin-bottom: 20px;
   }
 
@@ -553,9 +560,8 @@ article{
   .box_container .Sbox{
     display: flex;
     float: none;
-    margin: auto;
-    width: 340px;
-    height: 320px;
+    width: 280px;
+    height: 300px;
     margin-bottom: 20px;
   }
 
