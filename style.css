@@ -417,7 +417,7 @@ article{
   to {opacity: 1}
 }
 
-@media (max-width:641px) {
+@media (max-width:1080px) {
   article {
     flex-direction: column;
   }
