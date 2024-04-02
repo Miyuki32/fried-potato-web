@@ -479,17 +479,17 @@ article{
   
   .box_container{
     position: relative;
-    width: 600px;
+    width: 400px;
     height: 1100px;
   }
 
   .box_container .box{
     display: flex;
     float: none;
-    margin-left: 65px;
+    margin: auto;
   }
 
   .box_container .box .box_content{
     height: calc(100% - 50px)
   }
-}
+} 
