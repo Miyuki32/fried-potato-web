@@ -483,13 +483,37 @@ article{
     height: 1100px;
   }
 
-  .box_container .box{
+  .box_container .SWbox{
     display: flex;
     float: none;
     margin: auto;
+    margin-bottom: 20px;
   }
 
-  .box_container .box .box_content{
-    height: calc(100% - 50px)
+  .box_container .SWbox .box_content{
+    height: calc(100% - 60px)
+  }
+
+  .box_container .Mbox{
+    display: flex;
+    float: none;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .box_container .Mbox .box_content{
+    height: calc(100% - 60px)
+  }
+
+  .box_container .Sbox{
+    display: flex;
+    float: none;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .box_container .Sbox .box_content{
+    height: calc(100% - 60px)
   }
 } 
+
