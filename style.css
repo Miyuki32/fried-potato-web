@@ -214,6 +214,7 @@ article{
   overflow: hidden;
   border-radius: 10px;
 }
+
 .box_container .Mbox{
   position: relative;
   width: calc(400px - 30px);
@@ -412,6 +413,62 @@ article{
   outline-offset: 2px;
 }
 
+.Obox_container{
+  position: relative;
+  width: 1400px;
+  height: 350px;
+  margin: auto;
+}
+
+.Obox_container .ON_ConsoleBox{
+  position: relative;
+  width: calc(350px - 30px);
+  height: calc(320px - 30px);
+  background: #1F2833;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.Obox_container .ON_ConsoleBox .l_icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #c5c6c7;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.Obox_container .ON_ConsoleBox:hover .l_icon{
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.Obox_container .ON_ConsoleBox .l_icon img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+  color: white;
+}
+
+.Obox_container .ON_ConsoleBox:hover .box_content{
+  top: 100px;
+  opacity: 1;
+}
+
+.Obox_container .ON_ConsoleBox .box_content{
+  font-size: 13px;
+}
+
 
 @keyframes fade {
   from {opacity: .4}
@@ -481,7 +538,7 @@ article{
   .box_container{
     position: relative;
     width: 390px;
-    height: 1100px;
+    height: 1000px;
   }
 
   .box_container .SWbox{
@@ -520,6 +577,25 @@ article{
   }
 
   .box_container .Sbox .box_content{
+    height: calc(100% - 60px)
+  }
+
+  .Obox_container{
+    position: relative;
+    width: 390px;
+    height: 1400px;
+  }
+
+  .Obox_container .ON_ConsoleBox{
+    display: flex;
+    float: none;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 340px;
+    height: 320px;
+  }
+
+  .Obox_container .ON_ConsoleBox .box_content{
     height: calc(100% - 60px)
   }
 }
@@ -572,5 +648,27 @@ article{
   .box_content{
     font-size: 12px;
   }
+
+  .Obox_container{
+    position: relative;
+    width: 360px;
+    height: 1200px;
+  }
+
+  .Obox_container .ON_ConsoleBox{
+    display: flex;
+    float: none;
+    margin: auto;
+    width: 260px;
+    height: 270px;
+    margin-bottom: 20px;
+  }
+
+  .Obox_container .ON_ConsoleBox .box_content{
+    height: calc(100% - 60px);
+    font-size: 12px;
+  }
+
+
 }
 
