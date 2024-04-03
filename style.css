@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +39,7 @@ article{
 }
 
 .navbar {
-  font-family: cursive;
+  font-family: Poppins;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -173,7 +174,7 @@ article{
 
 .text{
   font-size: 35px;
-  font-family: cursive;
+  font-family: Poppins;
   text-align: center;
   color: black;
 }
@@ -189,11 +190,11 @@ article{
 
 .section_bar{
   padding: 20px;
-  background-color: black;
+  background-color: #374151;
   color: #fff;
   text-align: center;
   font-size: 15px;
-  font-family: cursive;
+  font-family: Poppins;
 }
 
 .box_container{
@@ -367,13 +368,14 @@ article{
 .box_content h3{
   margin: 0 0 10px;
   padding: 0;
-  font-size: 24px;
+  font-size: 25px;
 }
 
 .box_content{
   margin: 0;
   padding: 0;
   font-size: 14px;
+  font-weight: 500;
   color: #fff;
 }
 
@@ -469,6 +471,25 @@ article{
   font-size: 13px;
 }
 
+.mobile_box_container{
+  display: none;
+}
+
+.mobile_switch{
+  display: none;
+}
+
+.mobile_xbox{
+  display: none;
+}
+
+.mobile_sony{
+  display: none;
+}
+
+.mobile_old{
+  display: none;
+}
 
 @keyframes fade {
   from {opacity: .4}
@@ -534,150 +555,145 @@ article{
   .button {
     padding: .75rem 1.5rem;
   }
+
+  .section_bar{
+    font-size: 11px;
+  }
   
   .box_container{
-    position: relative;
-    width: 390px;
-    height: 1000px;
+    display: none;
+  }
+  
+  .SWbox{
+    display: none;
   }
 
-  .box_container .SWbox{
-    display: flex;
-    float: none;
-    margin: auto;
-    margin-bottom: 20px;
-    width: 340px;
-    height: 320px;
+  .Mbox{
+    display: none;
   }
 
-  .box_container .SWbox .box_content{
-    height: calc(100% - 60px)
-  }
-
-  .box_container .Mbox{
-    display: flex;
-    float: none;
-    margin: auto;
-    margin-bottom: 20px;
-    width: 340px;
-    height: 320px;
-  }
-
-  .box_container .Mbox .box_content{
-    height: calc(100% - 60px)
-  }
-
-  .box_container .Sbox{
-    display: flex;
-    float: none;
-    margin: auto;
-    margin-bottom: 20px;
-    width: 340px;
-    height: 320px;
-  }
-
-  .box_container .Sbox .box_content{
-    height: calc(100% - 60px)
+  .Sbox{
+    display: none;
   }
 
   .Obox_container{
+    display: none;
+  }
+
+  .ON_ConsoleBox{
+    display: none;
+  }
+  
+  .mobile_box_container{
+    display: block;
     position: relative;
-    width: 390px;
-    height: 1400px;
-  }
-
-  .Obox_container .ON_ConsoleBox{
-    display: flex;
-    float: none;
-    margin: auto;
-    margin-bottom: 20px;
-    width: 340px;
-    height: 320px;
-  }
-
-  .Obox_container .ON_ConsoleBox .box_content{
-    height: calc(100% - 60px)
-  }
-}
-
-@media (max-width:400px) {
-  .box_container{
-    position: relative;
-    width: 360px;
-    height: 1000px;
-  }
-
-  .box_container .SWbox{
-    display: flex;
-    float: none;
-    margin: auto;
-    width: 280px;
+    width: 300px;
     height: 300px;
-    margin-bottom: 20px;
-  }
-
-  .box_container .SWbox .box_content{
-    height: calc(100% - 60px)
-  }
-
-  .box_container .Mbox{
-    display: flex;
-    float: none;
     margin: auto;
-    width: 280px;
-    height: 300px;
-    margin-bottom: 20px;
   }
 
-  .box_container .Mbox .box_content{
-    height: calc(100% - 60px)
-  }
-
-  .box_container .Sbox{
-    display: flex;
-    float: none;
-    width: 280px;
-    height: 300px;
-    margin-bottom: 20px;
-  }
-
-  .box_container .Sbox .box_content{
-    height: calc(100% - 60px)
-  }
-
-  .box_content{
-    font-size: 12px;
-  }
-
-  .Obox_container{
+  .mobile_box_container .mobile_switch{
     position: relative;
-    width: 360px;
-    height: 1200px;
+    display: block; 
+    width: 120px;
+    height: 120px;
+    background: #E4000f;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
   }
 
-  .Obox_container .ON_ConsoleBox{
-    display: flex;
+  .mobile_switch .bi{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: white;
+  }
+
+  .mobile_box_container .mobile_xbox{
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 120px;
+    background: #0e7a0d;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .mobile_xbox .bi{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: white;
+  }
+
+  .mobile_box_container .mobile_sony{
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 120px;
+    background: #006FCD;
     float: none;
     margin: auto;
-    width: 260px;
-    height: 270px;
-    margin-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
   }
 
-  .Obox_container .ON_ConsoleBox .box_content{
-    height: calc(100% - 60px);
-    font-size: 12px;
+  .mobile_sony .bi{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: white;
   }
 
-
-}
-
-@media (width:1280px) {
-  .Obox_container{
+  .mobile_old{
     position: relative;
-    width: 700px;
-    height: 700px;
-    margin: auto;
+    display: block;
+    width: 120px;
+    height: 120px;
+    background: #c5c6c7;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
   }
-}
 
+  .mobile_old img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+  }
+
+  .mobile_old h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    font-size: 20px;
+    font-family: Poppins;
+    color: #1F2833;
+  }
+  
+}
