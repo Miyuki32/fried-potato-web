@@ -208,7 +208,7 @@ article{
   position: relative;
   width: calc(400px - 30px);
   height: calc(350px - 30px);
-  background: #0AB9E6;
+  background: #828282;
   float: left;
   margin: 15px;
   box-sizing: border-box;
@@ -373,7 +373,7 @@ article{
 
 .box_content{
   margin: 0;
-  padding: 0;
+  padding: 5;
   font-size: 14px;
   font-weight: 500;
   color: #fff;
@@ -489,6 +489,21 @@ article{
 
 .mobile_old{
   display: none;
+}
+
+footer{
+  text-align: center;
+  background-color: #272B31;
+  font-size: 17px;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 100px;
 }
 
 @keyframes fade {
@@ -694,6 +709,12 @@ article{
     font-size: 20px;
     font-family: Poppins;
     color: #1F2833;
+  }
+
+  
+  
+  footer li {
+    margin-right: 25px;
   }
   
 }
