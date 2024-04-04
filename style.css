@@ -492,7 +492,11 @@ article{
 }
 
 footer{
-  text-align: center;
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
   background-color: #272B31;
   font-size: 17px;
 }
@@ -503,7 +507,7 @@ footer ul{
 
 footer li {
   display: inline-block;
-  margin-right: 100px;
+  padding: 5px 20px;
 }
 
 @keyframes fade {
@@ -711,10 +715,12 @@ footer li {
     color: #1F2833;
   }
 
-  
-  
-  footer li {
-    margin-right: 25px;
+  footer{
+    padding: 15px;
+    font-size: 14px;
   }
   
+  footer li {
+    padding: 5px 14px;
+  }
 }
