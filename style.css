@@ -369,11 +369,32 @@ article{
   margin: 0 0 10px;
   padding: 0;
   font-size: 25px;
+}body{
+  background-color: black;
+  color: white;
+}
+
+h1{
+  font-size: 24px;
+  color: #ed9c31;
+}
+
+h2{
+  font-size: 20px;
+}
+
+.heading{
+  font-family: Arial;
+}
+
+article{
+  border-color: white;
+  padding: 10px;
 }
 
 .box_content{
   margin: 0;
-  padding: 5;
+  padding: 5px;
   font-size: 14px;
   font-weight: 500;
   color: #fff;
@@ -388,7 +409,7 @@ article{
   color: #FFFFFF;
   cursor: pointer;
   flex: 0 0 auto;
-  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: Poppins;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5rem;
@@ -400,7 +421,6 @@ article{
   transition-property: background-color,border-color,color,fill,stroke;
   transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
   user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
   width: auto;
 }
@@ -710,9 +730,10 @@ footer li {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.5s;
-    font-size: 20px;
+    font-size: 17px;
     font-family: Poppins;
     color: #1F2833;
+    text-align: center;
   }
 
   footer{
