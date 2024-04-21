@@ -376,7 +376,6 @@ article{
 
 h1{
   font-size: 24px;
-  color: #ed9c31;
 }
 
 h2{
@@ -389,7 +388,7 @@ h2{
 
 article{
   border-color: white;
-  padding: 10px;
+  animation: transitionIn 0.75s;
 }
 
 .box_content{
@@ -530,12 +529,86 @@ footer li {
   padding: 5px 20px;
 }
 
+.cconsole_container{
+  position: relative;
+  background: #1F2833;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.cconsole_container .cconsole_box{
+  width: auto;
+  height: auto  ;
+  box-sizing: border-box;
+}
+
+.cconsole_logo{
+  font-size: 200px;
+  display: inline;
+  padding-left: 20px;
+}
+
+.cconsole_content{
+  font-size: 22px;
+  text-align: center;
+  padding: 30px;
+  font-family: Poppins;
+}
+
+.game_logo{
+  width: auto;
+  height: auto;
+}
+
+#glogo1 {
+  width: 500px;
+  object-fit: none;
+}
+
+#glogo2 {
+  width: 500px;
+  object-fit: none;
+}
+
+#glogo3 {
+  width: 500px;
+  object-fit: none;
+}
+
+.oldconsole_container{
+  padding: 20px;
+  position: relative;
+  width: 1400px;
+  height: 1330px;
+  margin: auto;
+}
+
+.old_consolebox{
+  width: 300px;
+  height: 300px;
+  background: #1F2833;
+  float: left;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.oldconsole_content{
+  padding: 20px;
+  text-align: center;
+  font-family: Poppins;
+  margin-top: 22px;
+}
+
+
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
 
-@media (max-width:1280px) {
+
+@media (max-width:900px) {
+
   article {
     flex-direction: column;
   }
@@ -736,9 +809,48 @@ footer li {
     text-align: center;
   }
 
+
+  .oldconsole_container{
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+  
+  .old_consolebox{
+    height: 310px;
+    float: none;
+    border-radius: 20px;
+    margin: auto;
+  }
+  
+  .oldconsole_content{
+    padding: 20px;
+    text-align: center;
+    font-family: Poppins;
+    margin-top: 22px;
+    position: relative;
+  }
+
+  #glogo1 {
+    width: 300px;
+    object-fit: none;
+  }
+  
+  #glogo2 {
+    width: auto;
+    object-fit: none;
+  }
+  
+  #glogo3 {
+    width: auto;
+    object-fit: none;
+  }
+
   footer{
     padding: 15px;
     font-size: 14px;
+    position: absolute;
   }
   
   footer li {
