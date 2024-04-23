@@ -578,15 +578,14 @@ footer li {
 
 .oldconsole_container{
   padding: 20px;
-  position: relative;
   width: 1400px;
-  height: 1330px;
-  margin: auto;
+  height: 900px;
+  margin-left: 220px;
 }
 
 .old_consolebox{
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background: #1F2833;
   float: left;
   border-radius: 20px;
@@ -597,7 +596,7 @@ footer li {
   padding: 20px;
   text-align: center;
   font-family: Poppins;
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 
@@ -833,7 +832,7 @@ footer li {
   }
 
   #glogo1 {
-    width: 300px;
+    width: auto;
     object-fit: none;
   }
   
@@ -847,13 +846,17 @@ footer li {
     object-fit: none;
   }
 
+  .cconsole_content > p{
+    font-size: 15px;
+  }
+
   footer{
     padding: 15px;
     font-size: 14px;
-    position: absolute;
   }
   
   footer li {
     padding: 5px 14px;
   }
+  
 }
