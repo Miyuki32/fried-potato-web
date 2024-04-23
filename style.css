@@ -578,9 +578,9 @@ footer li {
 
 .oldconsole_container{
   padding: 20px;
-  width: 1400px;
-  height: 900px;
-  margin-left: 220px;
+  width: 1390px;
+  height: 860px;
+  margin: auto;
 }
 
 .old_consolebox{
@@ -588,6 +588,7 @@ footer li {
   height: 250px;
   background: #1F2833;
   float: left;
+  margin: 10px;
   border-radius: 20px;
   margin: 10px;
 }
