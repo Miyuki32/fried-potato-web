@@ -895,8 +895,8 @@ section .animate{
   font-size: 50px;
   font-family: Poppins;
   color: black;
-  padding-bottom: 200px;
-  padding-top: 80px;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
 
 .exclusives_box{
@@ -920,7 +920,6 @@ section .animate{
   color: black;
   font-family: Poppins;
   font-size: 50px;
-  padding-top: 100px;
 }
 
 .current_consolesec3 h2{
