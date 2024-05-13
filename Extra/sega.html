@@ -68,5 +68,119 @@
 			  <i class="fa fa-bars"></i>
 			</a>
 		</div>
+		<article>
+			<br>
+			<section class="sec-1 show-animate">
+				<div class="animate">
+					<h1 id="others_title">Sega Consoles</h1>
+				</div>
+			</section>
+			<br>
+			<section class="sec-2" id="sg1000">
+				<div class="animate">
+					<p class="others_title">SG-1000 <br> (1983-1985)</p>
+					<br><br><br>
+					<img src="../images/sg1000.png" alt="SG-1000" style="width: 40%;" class="others_image">
+					<p class="others_desp">Sega's first home console, the SG-1000, was released in 1983 to compete with arcade games. It used cartridges for games and had an upgraded version with detachable controllers. Sega also released computer versions with keyboards. However, the SG-1000 wasn't very successful due to competition from other consoles and Nintendo's Famicom launch on the same day.</p>
+				</div>
+			</section>
+			<br>
+			<section class="sec-3" id="master_system">
+				<div class="animate">
+					<p class="others_title">Master System<br> (1985-1989)</p>
+					<br><br><br>
+					<img src="../images/Sega_Master_System.webp" style="width: 40%;" alt="master_system" class="others_image">
+					<p class="others_desp">Sega's Master System was their second major console, a redesigned version of the earlier Mark III. It played both cartridges and card games and was released worldwide. A smaller, cheaper version called the Master System II came later but didn't sell well. While the Master System couldn't beat Nintendo's Famicom in North America or Japan, it did find success in Europe.</p>
+				</div>
+			</section>
+			<br>
+			<section class="sec-4" id="mega_drive">
+				<div class="animate">
+					<p class="others_title">Mega Drive <br> (1988 - 1997)</p>
+					<br><br><br>
+					<img src="../images/mega_drive.webp" style="width: 40%;" alt="mega_drive" class="others_image">
+					<p class="others_desp">The Sega Genesis (Mega Drive outside North America) was Sega's third major console. It used cartridges for games and was released worldwide. A smaller version, the Genesis II, came out later. There was even a handheld version called the Genesis Nomad. While it wasn't the top seller in Japan, the Genesis did well in some regions, especially North America.<p>
+				</div>
+			</section>
+			<br>
+			<section class="sec-5" id="game_gear">
+				<div class="animate">
+					<p class="others_title">Game Gear <br> (1990 - 1996)</p>
+					<br><br><br>
+					<img src="../images/Sega-Game-Gear-WB.png" style="width: 35%;" alt="game_gear	" class="others_image">
+					<p class="others_desp">Sega's first handheld console, the Game Gear, arrived in 1990. It offered games on cartridges, similar to their Master System console, but couldn't play those games directly. Despite facing tough competition from Nintendo's Game Boy, the Game Gear still achieved some commercial success.</p>
+				</div>
+			</section>
+			<br>
+			<section class="sec-6" id="mega_cd">
+				<div class="animate">
+					<p class="others_title">Mega CD <br> (1991)</p>
+					<br><br><br>
+					<img src="../images/mega_cd.png" style="width: 35%;" alt="mega_cd" class="others_image">
+					<p class="others_desp">Show drafts
+						volume_up
+						
+						Sega's Genesis (Mega Drive) got a CD upgrade called the Sega CD (Mega CD). This add-on offered a whole new library of CD-ROM games and a power boost for the Genesis. It even had a second version and a portable combo unit with the Genesis, but overall, it wasn't as popular as the Genesis itself.</p>
+				</div>
+			</section>
+			<br>
+			<section class="sec-7" id="32x">
+				<div class="animate">
+					<p class="others_title">32X<br> (1994 - 1996)</p>
+					<br><br><br>
+					<img src="../images/Sega-32X-Console.png" style="width: 45%;" alt="32x" class="others_image">
+					<p class="others_desp">The Sega 32X was an add-on for the Sega Genesis that offered more processing power and the ability to play special 32-bit games, a jump from the Genesis's 16-bit capabilities. It required its own cartridges, separate from Genesis games. Sega even planned to release a combined unit with the Genesis, but the 32X's poor sales led to the cancellation of this project.</p>
+				</div>
+			</section>
+			<br>
+			<section class="sec-8" id="sega_saturn">
+				<div class="animate">
+					<p class="others_title">Sega Saturn<br> (1994 - 1996)</p>
+					<br><br><br>
+					<img src="../images/Sega%20Saturn.png" style="width: 40%;" alt="sega_saturn" class="others_image">
+					<p class="others_desp">
+						The Sega Saturn was Sega's last major home console. It competed in the 32-bit generation against the PlayStation and Nintendo 64, using CD-ROMs for games. Interestingly, it launched alongside the Sega 32X, an add-on for the Genesis that also played 32-bit games. Sega even planned an internet-ready version of the Saturn but ultimately the console sold poorly compared to its rivals.</p>
+				</div>
+			</section>
+			<br>
+			<section class="sec-9" id="dreamcast">
+				<div class="animate">
+					<p class="others_title">Dreamcast<br> (1998 - 2001)</p>
+					<br><br><br>
+					<img src="../images/sega_dreamcast.png" style="width: 40%;" alt="sega_dreamcast" class="others_image">
+					<p class="others_desp">Sega's final console, the Dreamcast, arrived in the sixth generation and competed with the PlayStation 2. It used GD-ROM discs for games and boasted a built-in modem for online gaming. The innovative VMU accessory acted as a memory card, second screen, and even a mini handheld console. Despite these features, the Dreamcast struggled because it couldn't play DVDs, a key feature for many consumers at the time. This ultimately led to the Dreamcast's commercial failure and Sega's exit from the hardware market.</p>
+				</div>
+			</section>
+			<br>
+				<script>
+					let sections = document.querySelectorAll('section')
+	
+					window.onscroll = () => {
+						sections.forEach(sec => {
+							let top = window.scrollY;
+							let offset = sec.offsetTop -150;
+							let height = sec.offsetHeight;
+	
+							if (top >= offset && top < offset + height) {
+								sec.classList.add('show-animate')
+							}
+							else {
+								sec.classList.remove('show-animate')
+							}
+						})
+					}
+				</script>
+		</article>
+		<footer>
+
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="/">About Us</a></li>
+				<li><a href="/">Contact Us</a></li>
+				<li><a href="/">Feedback</a></li>
+				<li><a href="https://github.com/Miyuki32/fried-potato-web" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Our Github</a></li>
+			</ul>
+			<br>
+		</footer>
     </body>
 </html>
