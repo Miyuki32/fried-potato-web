@@ -177,22 +177,29 @@
 					</div>
 				</div>
 				<script>
+					// Get the button elements by their IDs
 					const playstation_store = document.getElementById('sony_button');
 					const shopee = document.getElementById('shopee_button');
 					const impulse = document.getElementById('impulse_button');
-
+				  
+					// Add a click event listener to the PlayStation Store button
 					playstation_store.addEventListener('click', () => {
-  					window.open('https://store.playstation.com/en-my/pages/latest?gad_source=1&gclid=CjwKCAjwi_exBhA8EiwA_kU1MgeG6U57eUG_ah-M-55TNrq0uIS0oTIfID6O8roXmm-oWQLp0TeFOhoCFD4QAvD_BwE&gclsrc=aw.ds', '_blank');
+					  // Open the PlayStation Store page in a new tab
+					  window.open('https://store.playstation.com/en-my/pages/latest?gad_source=1&gclid=CjwKCAjwi_exBhA8EiwA_kU1MgeG6U57eUG_ah-M-55TNrq0uIS0oTIfID6O8roXmm-oWQLp0TeFOhoCFD4QAvD_BwE&gclsrc=aw.ds', '_blank');
 					});
-					
+				  
+					// Add a click event listener to the Shopee button
 					shopee.addEventListener('click', () => {
-  					window.open('https://shopee.com.my/sonystoreonline.os');
+					  // Open the Shopee Sony Store page in the same tab
+					  window.open('https://shopee.com.my/sonystoreonline.os');
 					});
-
+				  
+					// Add a click event listener to the Impulse button
 					impulse.addEventListener('click', () => {
-  					window.open('https://impulse.com.my/games-accessories/playstation-5/ps5-console/product/35327-playstation-5-console-digital-slim-edition', '_blank');
+					  // Open the Impulse PS5 Console Digital Slim Edition page in a new tab
+					  window.open('https://impulse.com.my/games-accessories/playstation-5/ps5-console/product/35327-playstation-5-console-digital-slim-edition', '_blank');
 					});
-				</script>
+				  </script>				  
 			</section>
 		</article>
 		<footer>
@@ -233,10 +240,11 @@
 				</ul>
 			  </div>
 			  <div class="ft-main-item">
-				<h2 class="ft-title">About Us</h2>
+				<h2 class="ft-title"><a href="about_us.html">About Us</a></h2>
 				<ul>
-				  <li><a href="#">Contact</a></li>
-				  <li><a href="#">Socials</a></li>
+				  <li><a href="./about_us.html#team">The team</a></li>
+				  <li><a href="./about_us.html#vision">Our Vision</a></li>
+				  <a href="feedback.html">Feedback</a>
 				  <li><a href="https://github.com/Miyuki32/fried-potato-web" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Our Github</a></li>
 				</ul>
 			  </div>

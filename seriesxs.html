@@ -12,7 +12,6 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-		<script src="./scripts/burger.js"></script>
     </head>
 	<body>
 		<header>
@@ -169,20 +168,27 @@
 					</div>
 				</div>
 				<script>
+					// Get the button elements by their IDs
 					const microsoft_store = document.getElementById('microsoft_button');
 					const shopee = document.getElementById('shopee_button');
 					const impulse = document.getElementById('impulse_button');
-
+				  
+					// Add a click event listener to the Microsoft Store button
 					microsoft_store.addEventListener('click', () => {
-  					window.open('https://www.xbox.com/en-US/xbox-game-pass/games', '_blank');
+					  // Open the Xbox Game Pass games page on the official Microsoft website in a new tab
+					  window.open('https://www.xbox.com/en-US/xbox-game-pass/games', '_blank');
 					});
 					
+					// Add a click event listener to the Shopee button
 					shopee.addEventListener('click', () => {
-  					window.open('https://shopee.com.my/Microsoft-Xbox-Series-S-Series-X-Next-Gen-Console-Stand-Alone-Diablo-IV-Bundle-Starter-Bundle-Set-i.141942477.6453918604?sp_atk=e444e0e3-ae84-4655-b5ff-7771bb06f533&xptdk=e444e0e3-ae84-4655-b5ff-7771bb06f533');
+					  // Open the Microsoft Xbox Series S/X Console page on Shopee in a new tab
+					  window.open('https://shopee.com.my/Microsoft-Xbox-Series-S-Series-X-Next-Gen-Console-Stand-Alone-Diablo-IV-Bundle-Starter-Bundle-Set-i.141942477.6453918604?sp_atk=e444e0e3-ae84-4655-b5ff-7771bb06f533&xptdk=e444e0e3-ae84-4655-b5ff-7771bb06f533');
 					});
-
+				  
+					// Add a click event listener to the Impulse button
 					impulse.addEventListener('click', () => {
-  					window.open('https://impulse.com.my/games-accessories/xbox-series-s-x/xbox-series-accessories', '_blank');
+					  // Open the Xbox Series S/X Accessories page on Impulse in a new tab
+					  window.open('https://impulse.com.my/games-accessories/xbox-series-s-x/xbox-series-accessories', '_blank');
 					});
 				</script>
 			</section>
@@ -221,14 +227,15 @@
 				<ul>
 				  <li><a href="./microsoft.html">Main Page</a></li>
 				  <li><a href="./seriesxs.html">Xbox Series X/S</a></li>
-				  <li><a href="./other_microsoft.html">Xbox Old Consoles</a></li>
+				  <li><a href="./other_xbox.html">Xbox Old Consoles</a></li>
 				</ul>
 			  </div>
 			  <div class="ft-main-item">
-				<h2 class="ft-title">About Us</h2>
+				<h2 class="ft-title"><a href="about_us.html">About Us</a></h2>
 				<ul>
-				  <li><a href="#">Contact</a></li>
-				  <li><a href="#">Socials</a></li>
+				  <li><a href="./about_us.html#team">The team</a></li>
+				  <li><a href="./about_us.html#vision">Our Vision</a></li>
+				  <a href="feedback.html">Feedback</a>
 				  <li><a href="https://github.com/Miyuki32/fried-potato-web" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Our Github</a></li>
 				</ul>
 			  </div>

@@ -1,42 +1,57 @@
+/* Reset margin, padding, and set box-sizing for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Enable smooth scrolling for the entire document */
 html{
   scroll-behavior: smooth;
 }
 
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
+/* Set the default font for the body and remove its margin */
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
 
+/* Hide all elements with class mySlides by default */
+.mySlides {
+  display: none;
+}
 
+/* Align images to the middle vertically */
 img {
   vertical-align: middle;
 }
 
-
+/* Remove underline from all links */
 a {
   text-decoration: none;
 }
 
+/* Set the link color for unvisited links */
 a:link{
   color: #fff;
 }
 
+/* Set the link color for visited links */
 a:visited{
   color: #fff;
 }
 
+/* Remove list styling from all list items */
 li {
   list-style: none;
 }
 
+/* Set background color for article elements */
 article{
   background-color: black;
 }
 
+/* Style for the navigation bar */
 .navbar {
   font-family: Poppins;
   display: flex;
@@ -47,26 +62,31 @@ article{
   color: #fff;
 }
 
+/* Style for the menu inside the navbar */
 .menu {
   display: flex;
   gap: 1em;
   font-size: 25px;
 }
 
+/* Add hover effect for menu items */
 .menu li:hover {
   background-color: #3A3A3A;
   border-radius: 5px;
   transition: 0.3s ease;
 }
 
+/* Padding for individual menu items */
 .menu li {
   padding: 5px 15px;
 }
 
+/* Padding for the logo */
 .logo{
   padding: 5px 17px;
 }
-  
+
+/* Dropdown menu style */
 .dropdown {
   background-color: #3A3A3A;
   padding: 1em 0;
@@ -77,58 +97,67 @@ article{
   z-index: 10000;
 }
 
+/* Add margin between dropdown items */
 .dropdown li + li { 
   margin-top: 10px;
 }
 
+/* Padding and width for dropdown items */
 .dropdown li {
   padding: 0.5em 1em;
   width: 6em;
   text-align: left;
 }
 
+/* Hover effect for dropdown items */
 .dropdown li:hover {
   background-color: #3A3A3A;
 }
 
+/* Display dropdown when hovering over specific elements */
 .nintendo:hover .dropdown {
   display: block;
 }
 
-.sony:hover .dropdown{
+.sony:hover .dropdown {
   display: block;
 }
 
-.microsoft:hover .dropdown{
+.microsoft:hover .dropdown {
   display: block;
 }
 
-.h_mention:hover .dropdown{
+.h_mention:hover .dropdown {
   display: block;
 }
 
-.active{
+/* Hide elements with class active */
+.active {
   display: none;
 }
 
-.topnav #myLinks{
+/* Hide links in top navigation */
+.topnav #myLinks {
   display: none;
 }
 
-.icon{
+/* Hide icon elements */
+.icon {
   display: none;
 }
 
+/* Style for the slideshow container */
 .slideshow-container {
   position: relative;
   margin: auto;
 }
 
+/* Hide slides by default */
 .mySlides {
   display: none;
 }
 
-
+/* Style for previous and next buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -144,15 +173,18 @@ article{
   user-select: none;
 }
 
+/* Position the next button to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
+/* Change background color on hover for prev and next buttons */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
+/* Style for text displayed on slides */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -163,6 +195,7 @@ article{
   text-align: center;
 }
 
+/* Style for number text on slides */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -171,23 +204,26 @@ article{
   top: 0;
 }
 
-.text{
+/* Larger text for main slide text */
+.text {
   font-size: 35px;
   font-family: Poppins;
   text-align: center;
   color: black;
 }
 
-
+/* Style for active state and dot hover state */
 .active, .dot:hover {
   background-color: #717171;
 }
 
-.numbertext{
+/* Hide number text elements */
+.numbertext {
   display: none;
 }
 
-.section_bar{
+/* Style for section bar */
+.section_bar {
   padding: 20px;
   background-color: #374151;
   color: #fff;
@@ -196,14 +232,16 @@ article{
   font-family: Poppins;
 }
 
-.box_container{
+/* Container for boxes */
+.box_container {
   position: relative;
   width: 1200px;
   height: 380px;
-  margin:auto;
+  margin: auto;
 }
 
-.box_container .SWbox{
+/* Style for Nintendo box */
+.box_container .SWbox {
   position: relative;
   width: 350px;
   height: 350px;
@@ -215,7 +253,8 @@ article{
   border-radius: 10px;
 }
 
-.box_container .Mbox{
+/* Style for Microsoft box */
+.box_container .Mbox {
   position: relative;
   width: 350px;
   height: 350px;
@@ -227,7 +266,8 @@ article{
   border-radius: 10px;
 }
 
-.box_container .Sbox{
+/* Style for Sony box */
+.box_container .Sbox {
   position: relative;
   width: 350px;
   height: 350px;
@@ -239,8 +279,8 @@ article{
   border-radius: 10px;
 }
 
-
-.box_container .SWbox .swbox_icon{
+/* Style for Nintendo box icon */
+.box_container .SWbox .swbox_icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -251,7 +291,8 @@ article{
   z-index: 1;
 }
 
-.box_container .SWbox:hover .swbox_icon{
+/* Hover effect for Nintendo box icon */
+.box_container .SWbox:hover .swbox_icon {
   top: 20px;
   left: calc(50% - 40px);
   width: 80px;
@@ -259,7 +300,8 @@ article{
   border-radius: 50%;
 }
 
-.box_container .SWbox .swbox_icon .bi{
+/* Style for Nintendo box icon content */
+.box_container .SWbox .swbox_icon .bi {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -269,11 +311,13 @@ article{
   color: white;
 }
 
-.box_container .SWbox:hover .swbox_icon .bi{
+/* Hover effect for Nintendo box icon content */
+.box_container .SWbox:hover .swbox_icon .bi {
   font-size: 40px;
 }
 
-.box_container .Mbox .mbox_icon{
+/* Style for Microsoft box icon */
+.box_container .Mbox .mbox_icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -284,7 +328,8 @@ article{
   z-index: 1;
 }
 
-.box_container .Mbox:hover .mbox_icon{
+/* Hover effect for Microsoft box icon */
+.box_container .Mbox:hover .mbox_icon {
   top: 20px;
   left: calc(50% - 40px);
   width: 80px;
@@ -292,7 +337,8 @@ article{
   border-radius: 50%;
 }
 
-.box_container .Mbox .mbox_icon .bi{
+/* Style for Microsoft box icon content */
+.box_container .Mbox .mbox_icon .bi {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -302,11 +348,13 @@ article{
   color: white;
 }
 
-.box_container .Mbox:hover .mbox_icon .bi{
+/* Hover effect for Microsoft box icon content */
+.box_container .Mbox:hover .mbox_icon .bi {
   font-size: 40px;
 }
 
-.box_container .Sbox .sbox_icon{
+/* Style for Sony box icon */
+.box_container .Sbox .sbox_icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -317,7 +365,8 @@ article{
   z-index: 1;
 }
 
-.box_container .Sbox:hover .sbox_icon{
+/* Hover effect for Sony box icon */
+.box_container .Sbox:hover .sbox_icon {
   top: 20px;
   left: calc(50% - 40px);
   width: 80px;
@@ -325,7 +374,8 @@ article{
   border-radius: 50%;
 }
 
-.box_container .Sbox .sbox_icon .bi{
+/* Style for Sony box icon content */
+.box_container .Sbox .sbox_icon .bi {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -335,11 +385,13 @@ article{
   color: white;
 }
 
-.box_container .Sbox:hover .sbox_icon .bi{
+/* Hover effect for Sony box icon content */
+.box_container .Sbox:hover .sbox_icon .bi {
   font-size: 40px;
 }
 
-.box_content{
+/* Style for content inside the boxes */
+.box_content {
   position: relative;
   top: 100%;
   height: calc(100% - 100px);
@@ -349,41 +401,50 @@ article{
   opacity: 0;
 }
 
-.box_container .SWbox:hover .box_content{
+/* Hover effect for Nintendo box content */
+.box_container .SWbox:hover .box_content {
   top: 100px;
   opacity: 1;
 }
 
-.box_container .Mbox:hover .box_content{
+/* Hover effect for Microsoft box content */
+.box_container .Mbox:hover .box_content {
   top: 100px;
   opacity: 1;
 }
 
-.box_container .Sbox:hover .box_content{
+/* Hover effect for Sony box content */
+.box_container .Sbox:hover .box_content {
   top: 100px;
   opacity: 1;
 }
 
-.box_content h3{
+/* Style for headers inside the boxes */
+.box_content h3 {
   margin: 0 0 10px;
   padding: 0;
   font-size: 25px;
 }
-body{
+
+/* Set background color and text color for the body */
+body {
   background-color: black;
   color: white;
 }
 
-.heading{
+/* Set font for headings */
+.heading {
   font-family: Arial;
 }
 
-article{
+/* Set border color and animation for article elements */
+article {
   border-color: white;
   animation: transitionIn 0.75s;
 }
 
-.box_content{
+/* Style for text content inside the boxes */
+.box_content {
   margin: 0;
   padding: 5px;
   font-size: 14px;
@@ -391,7 +452,8 @@ article{
   color: #fff;
 }
 
-.button{
+/* Style for buttons */
+.button {
   padding-top: 10px;
   background-color: #111827;
   border: 1px solid transparent;
@@ -409,13 +471,14 @@ article{
   text-decoration: none #6B7280 solid;
   text-decoration-thickness: auto;
   transition-duration: .2s;
-  transition-property: background-color,border-color,color,fill,stroke;
+  transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
   user-select: none;
   touch-action: manipulation;
   width: auto;
 }
 
+/* Style for buttons */
 .button:hover {
   background-color: #374151;
 }
@@ -426,14 +489,17 @@ article{
   outline-offset: 2px;
 }
 
-.Obox_container{
+/* Style for container holding various boxes */
+.Obox_container {
   position: relative;
-  width: 1160px;
+  width: 1200px;
   height: 350px;
   margin: auto;
+  padding-right: 20px;
 }
 
-.ON_ConsoleBox{
+/* Style for individual console boxes */
+.ON_ConsoleBox {
   position: relative;
   width: 260px;
   height: 300px;
@@ -445,18 +511,20 @@ article{
   border-radius: 10px;
 }
 
-.Obox_container .ON_ConsoleBox .l_icon{
+/* Style for icons within the console boxes */
+.Obox_container .ON_ConsoleBox .l_icon {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: #c5c6c7;
-  transition: 0.5s; 
+  transition: 0.5s;
   z-index: 1;
 }
 
-.Obox_container .ON_ConsoleBox:hover .l_icon{
+/* Hover effect for console boxes */
+.Obox_container .ON_ConsoleBox:hover .l_icon {
   top: 20px;
   left: calc(50% - 40px);
   width: 80px;
@@ -464,7 +532,8 @@ article{
   border-radius: 50%;
 }
 
-.Obox_container .ON_ConsoleBox .l_icon img{
+/* Style for images within the icons */
+.Obox_container .ON_ConsoleBox .l_icon img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -473,32 +542,40 @@ article{
   color: white;
 }
 
-.Obox_container .ON_ConsoleBox:hover .box_content{
+/* Hover effect for content within console boxes */
+.Obox_container .ON_ConsoleBox:hover .box_content {
   top: 100px;
   opacity: 1;
 }
 
-.Obox_container .ON_ConsoleBox .box_content{
+/* Style for content within console boxes */
+.Obox_container .ON_ConsoleBox .box_content {
   font-size: 13px;
 }
 
+/* Style for footer */
 footer ul {
   list-style: none;
   padding-left: 0;
   font-family: Poppins;
 }
+
 footer {
   background-color: #3A3A3A;
   color: white;
   line-height: 1.5;
 }
+
 footer a {
   text-decoration: none;
   color: white;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
+/* Style for footer titles */
 .ft-title {
   color: white;
   font-family: Poppins, serif;
@@ -506,17 +583,20 @@ a:hover {
   padding-bottom: 10px;
 }
 
+/* Main footer styling */
 .ft-main {
   padding: 20px 30px;
   display: flex;
   flex-wrap: wrap;
 }
+
 .ft-main-item {
   padding: 20px;
   min-width: 20px;
 }
 
-.cconsole_container{
+/* Container for consoles */
+.cconsole_container {
   position: relative;
   background: #1F2833;
   width: auto;
@@ -524,95 +604,90 @@ a:hover {
   margin: auto;
 }
 
+/* Legal section styling */
 .ft-legal {
   padding: 15px 30px;
   background-color: #333;
 }
+
 .ft-legal-list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
+
 .ft-legal-list li {
   margin: 2px 10px;
   white-space: nowrap;
 }
-/* one before the last child */
+
+/* One before the last child */
 .ft-legal-list li:nth-last-child(2) {
   flex: 1;
 }
 
-.cconsole_container .cconsole_box{
+/* Styling for console container and content */
+.cconsole_container .cconsole_box {
   width: auto;
-  height: auto  ;
+  height: auto;
   box-sizing: border-box;
 }
 
-.cconsole_logo{
+.cconsole_logo {
   font-size: 200px;
   display: inline;
   padding-left: 20px;
 }
 
-.cconsole_content{
+.cconsole_content {
   font-size: 22px;
   text-align: center;
   padding: 30px;
   font-family: Poppins;
 }
 
-.game_logo{
+.game_logo {
   width: auto;
   height: auto;
 }
 
-#glogo1 {
+#glogo1, #glogo2, #glogo3 {
   width: 500px;
   object-fit: none;
 }
 
-#glogo2 {
-  width: 500px;
-  object-fit: none;
-}
-
-#glogo3 {
-  width: 500px;
-  object-fit: none;
-}
-
-.oldconsole_container{
+/* Container for old consoles */
+.oldconsole_container {
   padding: 20px;
   width: auto;
   height: 860px;
 }
 
-.old_consolebox{
+.old_consolebox {
   width: 250px;
   height: 250px;
   background: #1F2833;
   float: left;
   margin: 10px;
   border-radius: 20px;
-  margin: 10px;
 }
 
-.oldconsole_content{
+.oldconsole_content {
   padding: 20px;
   text-align: center;
   font-family: Poppins;
   margin-top: 18px;
 }
 
-.others_section{
+/* Other sections styling */
+.others_section {
   width: auto;
   height: 350px;
   background-color: #293443;
   margin: auto;
 }
 
-
-.others_image{
+.others_image {
   display: block;
   float: left;
   padding-right: 50px;
@@ -620,7 +695,7 @@ a:hover {
   padding-top: 20px;
 }
 
-.others_desp{
+.others_desp {
   display: block;
   padding-top: 50px;
   font-family: Poppins;
@@ -628,17 +703,18 @@ a:hover {
   padding-right: 20px;
 }
 
-.others_name{
+.others_name {
   padding: 20px;
   background-color: #1f2833;
   color: #fff;
   text-align: center;
-  font-size: 30px ;
+  font-size: 30px;
   font-family: Poppins;
   font-weight: bold;
 }
 
-.current_consoletitle{
+/* Current console title styling */
+.current_consoletitle {
   background-color: #E60012;
   display: flex;
   justify-content: center;
@@ -650,20 +726,20 @@ a:hover {
   border-radius: 0;
 }
 
-.current_consoletitle img{
+.current_consoletitle img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.current_consoletitle h1, .current_consoletitle p{
+.current_consoletitle h1, .current_consoletitle p {
   text-align: center;
   font-size: 50px;
   font-family: Poppins;
 }
 
-
-.current_consolesec1{
+/* Styling for current console sections */
+.current_consolesec1, .current_consolesec1_s {
   background-color: #3A3A3A;
   display: flex;
   justify-content: center;
@@ -673,21 +749,14 @@ a:hover {
   border: none;
   width: auto;
   border-radius: 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 93vh;
-  overflow: hidden;
-  border: none;
-  width: auto;
-  border-radius: 0;
 }
 
-.consolevar_container{
+.consolevar_container {
   margin: auto;
 }
 
-.var_box{
+/* Variants box styling */
+.var_box {
   background-color: transparent;
   width: 450px;
   height: 450px;
@@ -696,19 +765,19 @@ a:hover {
   margin: 20px;
 }
 
-.var_content{
+.var_content {
   width: 350px;
   margin-left: 60px;
 }
 
-.var_con_back h3{
+.var_con_back h3, .var_con_back_x h3, .var_con_backs h3 {
   font-size: 35px;
   padding-top: 20px;
   color: white;
   font-family: Poppins;
 }
 
-.var_con_back li{
+.var_con_back li, .var_con_back_x li, .var_con_backs li {
   font-size: 17px;
   color: white;
   font-family: Poppins;
@@ -716,11 +785,12 @@ a:hover {
   list-style: circle;
 }
 
-.var_con_front img{
+/* Front and back styling for variants */
+.var_con_front img, .var_con_front_x img, .var_con_fronts img {
   padding-top: 100px;
 }
 
-.var_con_inner{
+.var_con_inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -729,11 +799,11 @@ a:hover {
   transform-style: preserve-3d;
 }
 
-.var_box:hover .var_con_inner{
+.var_box:hover .var_con_inner {
   transform: rotateY(180deg);
 }
 
-.var_con_front, .var_con_back{
+.var_con_front, .var_con_back, .var_con_front_x, .var_con_back_x, .var_con_fronts, .var_con_backs {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -741,14 +811,15 @@ a:hover {
   backface-visibility: hidden;
 }
 
-.var_con_front{
+/* Styling for front and back sides of variants */
+.var_con_front {
   background-color: #cd0010;
   color: black;
   border: solid #9a000c;
   border-radius: 40px;
 }
 
-.var_con_back{
+.var_con_back {
   background-color: #cd0010;
   color: black;
   border: solid #9a000c;
@@ -756,7 +827,18 @@ a:hover {
   transform: rotateY(180deg);
 }
 
-.current_consolesec2{
+.var_con_front_x, .var_con_back_x {
+  background-color: #212121;
+  color: black;
+  border: solid #212121;
+  border-radius: 40px;
+}
+
+.var_con_back_x {
+  transform: rotateY(180deg);
+}
+
+.current_consolesec2 {
   background-color: white;
   display: flex;
   justify-content: center;
@@ -768,34 +850,33 @@ a:hover {
   border-radius: 0;
 }
 
-
-.exclusives_box{
+/* Exclusives box styling */
+.exclusives_box {
   width: 350px;
   display: inline-block;
 }
 
-
-.exclusives{
+.exclusives {
   margin-left: auto;
   margin-right: auto;
 }
 
-.exclusives_box img{
+.exclusives_box img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.current_consolesec2 h3{
+.current_consolesec2 h3 {
   text-align: center;
   color: black;
   font-family: Poppins;
   font-size: 50px;
-  padding-top: 50px
+  padding-top: 50px;
 }
 
-
-.current_consolesec3{
+/* Buy section styling */
+.current_consolesec3 {
   background-color: darkgray;
   display: flex;
   justify-content: center;
@@ -807,12 +888,12 @@ a:hover {
   border-radius: 0;
 }
 
-.buy_container{
+.buy_container {
   margin-left: auto;
   margin-right: auto;
 }
 
-.buy_box{
+.buy_box {
   width: 400px;
   height: 400px;
   float: left;
@@ -821,21 +902,21 @@ a:hover {
   border-radius: 50px;
 }
 
-.buy_box img{
+.buy_box img {
   padding-top: 45px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.buy_box button{
+.buy_box button {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-
-.atariconsole_container{
+/* Atari console container styling */
+.atariconsole_container {
   width: 950px;
   height: 600px;
   margin: auto;
@@ -843,22 +924,25 @@ a:hover {
   padding-left: 70px;
 }
 
-.segaconsole_container{
+/* Sega console container styling */
+.segaconsole_container {
   width: 1080px;
   height: 600px;
   margin: auto;
   padding-top: 30px;
 }
 
-.oldxbox_container{
+/* Old Xbox container styling */
+.oldxbox_container {
   padding: 20px;
   width: 1150px;
   height: 850px;
   margin: auto;
 }
 
-.current_consoletitle_s{
-  background-color: #00439C;
+/* Current console title for Xbox styling */
+.current_consoletitle_x {
+  background-color: #212121;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -869,68 +953,27 @@ a:hover {
   border-radius: 0;
 }
 
-.current_consoletitle_s img{
+.current_consoletitle_x img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.current_consoletitle_s h1, .current_consoletitle_s p{
+.current_consoletitle_x h1, .current_consoletitle_x p {
   text-align: center;
   font-size: 50px;
   font-family: Poppins;
 }
 
-.var_con_backs h3{
-  font-size: 35px;
-  padding-top: 20px;
-  color: white;
-  font-family: Poppins;
-}
-
-.var_con_backs li{
-  font-size: 17px;
-  color: white;
-  font-family: Poppins;
-  text-align: left;
-  list-style: circle;
-}
-
-.var_con_fronts img{
-  padding-top: 100px;
-}
-
-.var_con_fronts, .var_con_backs{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.var_con_fronts{
-  background-color: #006FCD;
-  color: black;
-  border: solid #006FCD;
-  border-radius: 40px;
-}
-
-.var_con_backs{
-  background-color: #006FCD;
-  color: black;
-  border: solid #006FCD;
-  border-radius: 40px;
-  transform: rotateY(180deg);
-}
-
-.oldsony_containers{
+/* Old Sony container styling */
+.oldsony_containers {
   padding: 20px;
   width: 1150px;
   height: 600px;
   margin: auto;
 }
 
-.current_consoletitles{
+.current_consoletitle_s {
   background-color: #006FCD;
   display: flex;
   justify-content: center;
@@ -942,61 +985,25 @@ a:hover {
   border-radius: 0;
 }
 
-.current_consoletitles img{
+.current_consoletitles img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.current_consoletitles h1, .current_consoletitles p{
+.current_consoletitles h1, .current_consoletitles p {
   text-align: center;
   font-size: 50px;
   font-family: Poppins;
 }
 
-.var_con_backs h3{
-  font-size: 35px;
-  padding-top: 20px;
-  color: white;
+.current_consoletitle_s img, .current_consoletitle_s h1, .current_consoletitle_s p {
+  text-align: center;
+  font-size: 50px;
   font-family: Poppins;
 }
 
-.var_con_backs li{
-  font-size: 17px;
-  color: white;
-  font-family: Poppins;
-  text-align: left;
-  list-style: circle;
-}
-
-.var_con_fronts img{
-  padding-top: 100px;
-}
-
-.var_con_fronts, .var_con_backs{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.var_con_fronts{
-  background-color: #006FCD;
-  color: black;
-  border: solid #006FCD;
-  border-radius: 40px;
-}
-
-.var_con_back_x{
-  background-color: #006FCD;
-  color: black;
-  border: solid #006FCD;
-  border-radius: 40px;
-  transform: rotateY(180deg);
-}
-
-.current_consolesec1_s{
+.current_consolesec1_s {
   background-color: #00439C;
   display: flex;
   justify-content: center;
@@ -1006,12 +1013,104 @@ a:hover {
   border: none;
   width: auto;
   border-radius: 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 93vh;
-  overflow: hidden;
+}
+
+/* About us section styling */
+.about_us {
+  background-color: #293443;
+  color: white;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 22px;
+}
+
+.about_us p, .about_us table, .about_us ul, .about_us h2, .about_us h3 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about_us table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 20px auto;
+}
+
+.about_us table, .about_us th, .about_us td {
+  border: 1px solid white;
+  padding: 8px;
+}
+
+.about_us th {
+  background-color: #374151;
+}
+
+.about_us h3 {
+  color: red;
+}
+
+/* Feedback section styling */
+.feedback {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 50px;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.feedback h1, .feedback h2 {
+  text-align: center;
+}
+
+.feedback table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.feedback td, .feedback th {
+  padding: 8px;
+  border: 1px solid white;
+  text-align: left;
+}
+
+.feedback input[type="text"], .feedback select, .feedback textarea {
+  width: calc(100% - 20px);
+  padding: 8px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  margin: 8px 0;
+  background-color: black;
+  color: white;
+}
+
+.feedback input[type="reset"], .feedback input[type="submit"] {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
   border: none;
-  width: auto;
-  border-radius: 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.feedback input[type="reset"]:hover, .feedback input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.feedback input[type="reset"]:focus, .feedback input[type="submit"]:focus {
+  outline: none;
+}
+
+.feedback input[type="reset"] {
+  margin-right: 10px;
+}
+
+/* About us section additional styling */
+.about_us_section {
+  padding: 20px;
+  background-color: #293443;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-family: Poppins;
 }

@@ -79,29 +79,38 @@
 				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 			</div>
 			<script>
+				// Initialize the slide index to 1, to show the first slide
 				let slideIndex = 1;
+				// Call the function to display the initial slide
 				showSlides(slideIndex);
-
-				
+			  
+				// Function to increment the slide index and show the next or previous slide
 				function plusSlides(n) {
 				  showSlides(slideIndex += n);
 				}
-				
+			  
+				// Function to set the current slide based on a given index
 				function currentSlide(n) {
 				  showSlides(slideIndex = n);
 				}
-				
+			  
+				// Function to display the slide corresponding to the given index
 				function showSlides(n) {
 				  let i;
+				  // Get all elements with the class name "mySlides"
 				  let slides = document.getElementsByClassName("mySlides");
+				  // If the index is greater than the number of slides, reset to the first slide
 				  if (n > slides.length) {slideIndex = 1}    
+				  // If the index is less than 1, set to the last slide
 				  if (n < 1) {slideIndex = slides.length}
+				  // Loop through all slides and hide them
 				  for (i = 0; i < slides.length; i++) {
 					slides[i].style.display = "none";  
 				  }
+				  // Display the current slide
 				  slides[slideIndex-1].style.display = "block";  
 				}
-			</script>
+			  </script>			  
 			<div class="section_bar"><h2>Current Generation Consoles</h2></div>
 			<br>
 			<div class="box_container">
@@ -226,10 +235,11 @@
 				</ul>
 			  </div>
 			  <div class="ft-main-item">
-				<h2 class="ft-title">About Us</h2>
+				<h2 class="ft-title"><a href="about_us.html">About Us</a></h2>
 				<ul>
-				  <li><a href="#">Contact</a></li>
-				  <li><a href="#">Socials</a></li>
+				  <li><a href="./about_us.html#team">The team</a></li>
+				  <li><a href="./about_us.html#vision">Our Vision</a></li>
+				  <a href="feedback.html">Feedback</a>
 				  <li><a href="https://github.com/Miyuki32/fried-potato-web" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Our Github</a></li>
 				</ul>
 			  </div>
